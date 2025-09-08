@@ -1,13 +1,13 @@
-package com.example;
+package com.bankpricetracker;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class ExamplePluginTest
+public class PluginLauncer
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(ExamplePlugin.class);
+		ExternalPluginManager.loadBuiltin(net.runelite.client.plugins.bankpricetracker.BankPriceTrackerPlugin.class);
 		RuneLite.main(args);
 	}
 }
